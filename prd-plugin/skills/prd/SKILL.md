@@ -56,7 +56,8 @@ Check the working directory for `PRD.md` first.
 
 **Always first: the chat language.** Ask, in English only (this is the one
 message written before the choice exists): "[1/40] In which language should I
-ask the questions?" Options: English, Russian, Hebrew. Do not add an "Other" option: the UI
+ask the questions?" Options, labels exactly as written, each in its own
+script: "English", "Русский", "עברית". Do not add an "Other" option: the UI
 adds it automatically, and the user types any other language there. The chosen
 or typed language becomes the chat language. Recommend nothing. Say nothing else before
 this question. From the answer on, use only the chosen language in the chat.
@@ -64,11 +65,11 @@ This question counts as question 1. Do not confirm the choice or wait: in the
 same response, ask question 2 (the next one below).
 
 **No PRD.md** — then ask, one at a time (numbers continue the count):
-2. PRD language. Options: English (always listed; recommended: AI coders work
-   best with it), the chat language by name (for example "Russian"; listed only
-   when the chat language is not English, so English is not shown twice;
-   Russian when the chat language is English, because the question needs two
-   options). Do not add an "Other" option: the UI adds it automatically.
+2. PRD language. Options, always these three, labels in their own script:
+   "English" (recommended: AI coders work best with it; add the
+   "(Recommended)" suffix in the chat language), "Русский", "עברית".
+   Descriptions are in the chat language. Do not add an "Other" option: the UI
+   adds it automatically, and the user types any other language there.
 3. (skip if `$ARGUMENTS` gave the idea) "Describe the idea in 2–3 sentences:
    what, for whom, why now." Free text: ask in plain text, not with options.
 4. Restate the idea in one sentence: who has which problem, and what V1 does
