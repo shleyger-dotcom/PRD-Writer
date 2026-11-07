@@ -1,6 +1,6 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "prd",
+  "name": "prd-writer",
   "description": "Interview-driven PRD writer for AI coders.",
   "owner": {
     "name": "shleyger-dotcom",
@@ -8,9 +8,9 @@
   },
   "plugins": [
     {
-      "name": "prd",
+      "name": "prd-writer",
       "description": "One-question-at-a-time interview that produces PRD.md (and optionally data model, architecture, ADR, critique).",
-      "source": "./prd-plugin",
+      "source": "./prd-writer",
       "category": "productivity"
     }
   ]

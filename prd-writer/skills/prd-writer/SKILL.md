@@ -1,14 +1,14 @@
 ---
-name: prd
+name: prd-writer
 description: >-
   Turns a raw product idea into a complete PRD.md that an AI coding agent can
   build from without guessing. Runs a strict one-question-at-a-time interview:
   every question comes with a recommended answer and alternatives, vague answers
   are pushed back, contradictions and weak spots are flagged at once, and
   nothing the user did not decide is silently filled in. Saves progress to
-  PRD.md so the interview can stop and resume. `/prd pack` also writes
+  PRD.md so the interview can stop and resume. `/prd-writer pack` also writes
   data-model.md, architecture.md, adr/001-*.md and critique.md. Use whenever
-  the user types /prd, asks to write, finish, review or continue a PRD, a
+  the user types /prd-writer, asks to write, finish, review or continue a PRD, a
   product spec, requirements or an MVP scope for an idea, or says things like
   "напиши PRD", "ТЗ для ИИ", "спецификация для идеи", "grill me on my idea",
   even if they do not say "PRD".
@@ -203,7 +203,7 @@ Count questions in this session (start questions included).
 5. Any P1 still open → `Status: Draft`, and in "Instructions for the AI coder"
    add: "Do not implement US-xx until Q-yy is answered."
 
-The counter restarts when the user runs `/prd` again; the limit is per session.
+The counter restarts when the user runs `/prd-writer` again; the limit is per session.
 
 ## 7. Assembly and Ready gate
 
@@ -231,7 +231,7 @@ End with: the path, the status, counts (stories, criteria, open questions,
 hypotheses), and one line: "Start coding in a fresh session and give it only
 PRD.md." A long interview chat is cluttered; the file is the clean copy.
 
-## 8. Pack mode (`/prd pack`)
+## 8. Pack mode (`/prd-writer pack`)
 
 Writes four more files next to `PRD.md`: `data-model.md`, `architecture.md`,
 `adr/001-<slug>.md`, `critique.md`. Read `references/pack-templates.md`.
